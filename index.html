@@ -129,7 +129,7 @@
 
   <!-- Configuración: completá estos valores después de crear tu proyecto en Supabase. -->
   <script>
-    const EVENT_DATE = "24 de octubre de 2026 · 21:45";
+    const EVENT_DATE = "24 de octubre de 2026 · 22:00";
     const EVENT_PLACE = "Catamarca 1356";
     // IMPORTANTE: reemplazá estos ejemplos por los nombres reales de tus familias invitadas.
     // El valor debe ser único por familia; podés usar el mismo texto en nombre y clave.
@@ -173,7 +173,7 @@
     FAMILIES.forEach((family) => {
       const option = document.createElement("option");
       option.value = family.key;
-      option.textContent = `${family.name} · ${family.expected} previstos`;
+      option.textContent = family.name;
       option.dataset.familyName = family.name;
       familySelect.appendChild(option);
     });
